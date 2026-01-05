@@ -105,6 +105,17 @@ document.addEventListener('DOMContentLoaded', () => {
             `);
         }
 
+        // Slide 3.6: Heatmap
+        if (data.charts && data.charts.heatmap) {
+            slideData.push(`
+                <h2>Weekly Routine</h2>
+                <p>Day vs Hour Intensity</p>
+                <div class="chart-container">
+                    <img src="data:image/png;base64,${data.charts.heatmap}" class="chart-img" alt="Weekly Heatmap">
+                </div>
+            `);
+        }
+
         // Slide 3.8: Avg Length
         if (data.charts && data.charts.avg_len_bar) {
             slideData.push(`
