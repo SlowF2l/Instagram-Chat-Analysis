@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Chat Recap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <section id="upload-section" class="slide active">
+            <div class="content">
+                <h1>Chat Recap</h1>
+                <p>Upload your Instagram chat JSON file to see your statistics.</p>
+                <input type="file" id="file-input" accept=".json">
+                <button id="analyze-btn">Get Recap</button>
+                <div id="loading" class="hidden">Analyzing...</div>
+                <div id="error" class="hidden"></div>
+            </div>
+        </section>
+        
+        <div id="results-container">
+            <!-- Slides will be injected here -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
